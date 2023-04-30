@@ -103,7 +103,7 @@ class MacOSAdapter(OSAdapter, SpecialFeaturesMixin):
         )
 
     def tell(self, text: str):
-        os.system('say "Экран заблокирован"')
+        os.system('say "' + text + '"')
 
     def open_in_browser(self, url: str):
         os.system("open " + url)

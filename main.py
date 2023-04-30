@@ -37,7 +37,7 @@ def main():
         ):
             enabled = False
             adapter.tell("Голосовое управление отключено")
-        elif "включить голосовое управление" is phrase:
+        elif "включить голосовое управление" in phrase:
             enabled = True
             adapter.tell("Голосовое управление включено")
 
